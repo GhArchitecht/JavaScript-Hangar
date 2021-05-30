@@ -1,5 +1,5 @@
 /* 
-      JavaScript Everywhere
+      JavaScript Basics
  */
 //Prompts a name and shows an image 
 var Enteredname = prompt("what is your name?");
@@ -224,3 +224,13 @@ if (score === 5){
 console.log(`Your quiz score is  ${score}, and you got a  ${rank} ranking`)
 const results = `Your quiz score is  ${score}, and you got a  ${rank} ranking`
 document.querySelector('html').innerHTML = results
+
+/* Program that prompts a users first and last and list the length of the name */
+
+const firstName = prompt("What is your first name?");
+const lastName = prompt("What is your last name?");
+var  fullName = firstName + lastName;
+
+let message =  `The string "${firstName.toUpperCase()}, ${lastName.toUpperCase()}" is ${fullName.length} characters long`
+
+console.log(message);
